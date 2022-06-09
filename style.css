@@ -1,0 +1,230 @@
+@charset "UTF-8"; 
+
+@font-face {
+    font-family: 'An' ;
+    src: url('../bug--droid/fontes/idroid.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'bebas';
+    src: url('../bug--droid/fontes/BebasNeue-Regular.ttf') format('truetype');
+}
+
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    min-width: 450px;
+    text-indent: 30px;
+}
+
+header {
+    background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
+    color: white;
+    text-align: center;
+    min-height: 150px;
+    padding-top: 40px;
+    min-width: 400px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.541);
+}
+
+nav {
+    text-align: left;
+    margin-top: -25px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    font-weight: bold;     
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.712);
+}
+
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius: 10px;
+    transition-duration: .3s;
+    padding: 6px 6px;
+}
+
+header  h1 {
+    font-size: 3em;
+    margin: -31px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.712);
+    font-family: 'bebas';   
+}
+
+header > p {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 10px -28px 10px;
+    padding: 15px 10px 10px 10px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.767);
+}
+
+a.externo::after {
+    content: '\1F517\00A0';
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;      
+}
+
+main {
+    font-size: 1.1em;
+    background-color:white;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.411);  
+}
+
+main h1 {
+    font-family: 'An';
+    color: var(--cor4);
+    text-indent: 3cm;
+    padding: 7px;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main  h2 {
+    font-family: 'An';
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor2),transparent);
+    text-indent: 30px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 6px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main p {
+    font-family: Arial;   
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+article {
+    background-color: white;
+    padding: 20px;
+    text-indent: 2em;
+    margin: auto;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px ;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.438);
+    margin-bottom: 20px;
+}
+ 
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    margin: -10px -10px 0px -10px;
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px ;
+}
+
+aside > p {
+    padding: 20px;
+}
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type:'\2714\00A0\00A0';
+    padding: 10px;
+}
+
+footer {
+    background-color: #1a5c37;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin: 10px;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.404);
+}
+
+#pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#img {
+     display: block;
+     margin: auto;
+     margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#img2 {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+div.video {
+    background-color: var(--cor5);
+    padding: 20px;
+    margin: 0px -20px ;
+    position: relative;
+    padding-bottom: 50%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5% ;
+    left: 5% ;
+    width: 90% ;
+    height: 90% ;
+}
+
+
+
